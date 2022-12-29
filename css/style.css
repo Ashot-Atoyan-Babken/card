@@ -1,0 +1,142 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+background: rgb(238,150,149);
+
+}
+.wrapper{
+	width: 1000px;
+	margin: 0 auto;
+}
+.main_flex{
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 25%;
+
+}
+.flex_left img{
+	object-fit: cover;
+	width: 600px;
+
+}
+
+.flex_right{
+	color: #fff;
+}
+.flex_right h2{
+	font-weight: 900;
+	padding-bottom: 15px;
+}
+
+.flex_right p:first-child{
+	text-transform: capitalize;
+	padding-bottom: 15px;
+}
+
+.flex_right p:nth-child(3),
+.flex_right p:nth-child(4){
+	display: inline-block;
+	padding: 0 25px 15px 0;
+	font-weight: 700;
+}
+
+.flex_right p:nth-child(4){
+	text-decoration: line-through;
+	opacity: 0.6;	
+	font-size: 14px;
+
+}
+
+
+.flex_right p:nth-child(5){
+		padding-bottom: 15px;
+}
+.flex_right p:nth-child(6){
+	width: 300px;
+	display: block;	
+	padding-bottom: 15px;
+}
+
+.flex_right p:nth-child(7){
+		padding-bottom: 25px;
+
+}
+.color{
+	
+}
+.colors{
+	display: inline-block;
+	width: 45px;
+	height: 45px;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: 0.5s;
+}
+.color div:first-child{
+ 	background: linear-gradient(#853341, #853542, #813340)
+}
+.color div:nth-child(2){
+ 	background: linear-gradient(#262626, #252525)
+}
+.color div:nth-child(3){
+ 	background: linear-gradient(#5b7189, #5b7689, #4f6980)
+}
+.color div:nth-child(4){
+ 	background: linear-gradient(#6688a4, #6487a3, #6689a5)
+}
+.color div:nth-child(5){
+ 	background: linear-gradient(#84776f, #83766e, #867971)
+}
+.color div:nth-child(6){
+ 	background: linear-gradient(#646867, #5e6261, #5f6362)
+}
+
+.button:before{
+	content: url('../img/svg/2849824_store_shopping_market_buy_shop_icon.png')
+}
+.button{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 200px;
+	height: 50px;
+	margin: 25px 0 0 0px;
+	border: 1px solid #000;
+	border-radius: 5px;
+	cursor: pointer;
+ 	background: linear-gradient(#853341, #853542, #813340)
+}
+
+.colors:hover{
+	border: 1px solid #000;
+}
+
+@media screen and (max-width: 400px) {
+	.wrapper{
+		margin: 0 auto;
+	}
+  .main_flex {
+	display: flex;
+ 	flex-direction: column;
+  }
+   .button{
+  	margin: 15px auto 0;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+		.wrapper{
+		margin: 0 auto;
+	}
+  .main_flex {
+	display: flex;
+  	flex-direction: column;
+  }
+   .button{
+  	margin: 15px auto 0;
+  }
+}
